@@ -1,0 +1,41 @@
+print ("Welcome to my movie quiz")
+
+playing = input("Do you want to play?")
+
+if playing.lower() != "yes":
+    print("Aw. I'm sad to see you go")
+    quit()
+
+print("Okay let's play")
+points = 0
+
+answer1= input("Who is the common actor in all of these movies: American Psycho, The Dark Knight and The Prestige? ")
+
+if answer1.lower() != "christian bale":
+    print("Sorry that's incorrect. The correct answer is" + str(answer1.lower()))
+else:
+    points+=1
+    print("Correct")
+
+answer2= input("The four Hogwarts houses are: Gryffindor, Hufflepuff, Ravenclaw and _______  ")
+
+if answer2.lower() != "slytherin":
+    print("Incorrect. Sorry, the answer is " + str(answer2.lower()) + "Let's see if you'll get the next one")
+else:
+    points+=1
+    print("Correct")
+
+answer3= input("Are the following Marvel or DC characters: Dr Strange, Iron Man and Hawkeye? ")
+
+if answer3.lower() != "marvel":
+    print("Sorry that's incorrect. The correct answer is" + str(answer3.lower()))
+else:
+    points+=1
+    print("Correct")
+
+print("Total points = " + str(points))
+if points== 3:
+    print("Marvelous!!")
+
+print("Did you do as well as you expected")
+
