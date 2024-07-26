@@ -1,0 +1,7 @@
+#dog years converter
+
+dog_years= float(input("Please enter your dog's age: "))
+human_years=float(dog_years*7)
+if dog_years< 0:
+    print("Please enter a number above 0")
+print("Your dog is " + str(human_years) + "huaman years old")
